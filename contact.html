@@ -2,7 +2,10 @@
 <html>
 <head>
   <title>Alyssa Manse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
 </head>
 <body>
 
@@ -16,7 +19,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Alyssa Manse</a>
+      <a class="navbar-brand name" href="index.html">Alyssa Manse</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -34,40 +37,41 @@
 <div class="container">
   
   <div class="row">
-    <div class="col-xs-12 col-md-8">
-      <!--Bio Section-->
+    <div class="col-xs-12 col-md-8 content">
+      <!-- Contact Form -->
       <div class="page-header">
         <h1>Contact</h1>
       </div>
-        <form>
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" placeholder="John Smith">
-          </div>
-          <div class="form-group">
-            <label for="email">Password</label>
-            <input type="text" class="form-control" placeholder="example@gmail.com">
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <input type="text-area" class="form-control">
-          <button type="submit" class="btn btn-success">Submit</button>
-        </form>
+      <form class="contact-form" action="mailto:alyssamanse@gmail.com">
+        <label>Name</label>
+        <br>
+        <input type="text" value="John Smith" name="name">
+        <br><br>
+        <label>Email</label>
+        <br>
+        <input type="text" value="example@gmail.com" name="email">
+        <br><br>
+        <label>Message</label>
+        <br>
+        <input class="message" type="text-area" name="message">
+        <br><br>
+        <button type="button" class="btn btn-success">Submit</button>
+      </form>
     </div>
     <div class="col-xs-12 col-md-4">
       <!--Sidebar-->
-      <div class="panel panel-primary">
+      <div class="panel panel-primary social">
         <div class="panel-heading">
           <h3 class="panel-title text-center">Connect with Me</h3>
         </div>
-        <div class="panel-body row">
-          <div class="col-xs-3">
+        <div class="panel-body row social-icons">
+          <div class="col-xs-4">
             <a href="https://github.com/alyssamanse" target="blank_"><img src="assets/github.png" class="img-responsive img-rounded" alt="github logo icon" width="60px" height="60px"></a>
           </div>
-          <div class="col-xs-3">
+          <div class="col-xs-4">
             <a href="https://www.linkedin.com/in/alyssamanse/" target="blank_"><img src="assets/linkedin.png" class="img-responsive img-rounded" alt="linked in logo icon" width="60px" height="60px"></a>
           </div>
-          <div class="col-xs-3">
+          <div class="col-xs-4">
             <a href="https://stackoverflow.com/users/8134003/alyssa-manse" target="blank_"><img src="assets/stackoverflow.png" class="img-responsive img-rounded" alt="stack overflow logo icon" width="60px" height="60px"></a>
           </div>
         </div>
